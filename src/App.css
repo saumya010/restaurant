@@ -3,3 +3,11 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__padding {
+  padding: 4rem 6rem;
+}
