@@ -1,0 +1,17 @@
+.g__header {
+  background-color: var(--color-black);
+}
+.g__header-h1 {
+  color: var(--color-golden);
+  font-size: 90px;
+  letter-spacing: 0.04em;
+  line-height: 117px;
+  text-transform: uppercase;
+}
+.g__header-p {
+  color: var(--color-grey);
+  margin: 2rem 0;
+}
+.g__wrapper-img img {
+  width: 80%;
+}
