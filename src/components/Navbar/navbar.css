@@ -92,6 +92,13 @@
   }
 }
 @media screen and (max-width: 1150px) {
+  .g__navbar-links {
+    display: none;
+  }
+
+  .g__navbar-smallscreen {
+    display: flex;
+  }
 }
 @media screen and (max-width: 650px) {
   .g__navbar {
