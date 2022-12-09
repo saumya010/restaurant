@@ -1,0 +1,112 @@
+.g__gallery {
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: row;
+  padding: 4rem 0 4rem 6rem;
+}
+.g__gallery-left {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 500px;
+  padding-right: 2rem;
+}
+.g__gallery-right {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  max-width: 50%;
+  position: relative;
+}
+.g__gallery-right_container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: 0;
+  width: max-content;
+}
+.g__gallery-right_container::-webkit-scrollbar {
+  display: none;
+}
+.g__gallery-images_card {
+  height: 440px;
+  margin-right: 2rem;
+  min-width: 301px;
+  position: relative;
+}
+.gallery__image-icon {
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: 2rem;
+  opacity: 0.35;
+  position: absolute;
+  transition: 0.5s ease;
+}
+.g__gallery-images_card img {
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.5s ease;
+  width: 100%;
+}
+.g__gallery-images_card:hover img {
+  opacity: 0.35;
+}
+.g__gallery-images_card:hover .gallery__image-icon {
+  opacity: 1;
+}
+.g__gallery-right_arrows {
+  align-items: center;
+  bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: absolute;
+  width: 100%;
+}
+.gallery__arrow-icon {
+  background-color: var(--color-black);
+  color: var(--color-golden);
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 0.5s ease;
+}
+.gallery__arrow-icon:hover {
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 2000px) {
+  .g__gallery-left {
+    min-width: 1000px;
+    padding-right: 4rem;
+  }
+  .g__gallery-images_card {
+    height: 550px;
+    min-width: 400px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .g__gallery {
+    flex-direction: column;
+    padding-left: 4rem;
+  }
+  .g__gallery-right {
+    margin: 5rem 0;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .g__gallery {
+    padding-left: 2rem;
+  }
+  .g__gallery-left {
+    min-width: 100%;
+  }
+  .g__gallery-images_card {
+    min-width: 240px;
+    height: 320px;
+  }
+}
