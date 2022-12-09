@@ -1,0 +1,30 @@
+.g__menuitem {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  width: 100%;
+}
+.g__menuitem-head {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.g__menuitem-name {
+  flex: 1;
+}
+.g__menuitem-price {
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+.g__menuitem-dash {
+  background-color: var(--color-crimson);
+  height: 1px;
+  margin: 0 1rem;
+  max-width: 100px;
+  width: 100%;
+}
+.g__menuitem-tags {
+  margin-top: 0.2rem;
+  width: 100%;
+}
