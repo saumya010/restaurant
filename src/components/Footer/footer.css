@@ -1,0 +1,15 @@
+.g__footeroverlay {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.g__footeroverlay-black {
+  background-color: var(--color-black);
+  height: 25%;
+}
+.g__footeroverlay-img {
+  height: 75%;
+}
