@@ -11,7 +11,7 @@ import {
   Laurels,
   Menu,
 } from "./containers";
-import "./app.css";
+import "./App.css";
 
 const App = () => {
   return (
